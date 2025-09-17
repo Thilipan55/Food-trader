@@ -1,0 +1,1017 @@
+/* src/dashboard/Dashboard.css */
+
+.dashboard-container {
+  padding: 2rem;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-family: 'Georgia', serif; /* Matching the elegant serif font */
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.add-button {
+  background-color: #4CAF50; /* A vibrant green */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.donations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* --- Donation Card Styling --- */
+
+.donation-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-image-container {
+  width: 100%;
+  height: 200px; /* Consistent image height */
+  overflow: hidden;
+}
+
+.donation-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 1.25rem;
+}
+
+.card-info h3 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.card-category {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin: 0;
+}
+
+.card-category span {
+  font-weight: bold;
+  color: #555;
+}
+
+
+/* src/dashboard/Dashboard.css */
+
+/* --- Add these styles to the bottom of your file --- */
+
+.donation-form-container {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.donation-form-container h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+
+/* src/dashboard/Dashboard.css */
+
+/* --- Add these styles to the bottom of your file --- */
+
+.order-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.order-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* src/dashboard/Dashboard.css */
+
+/* General Dashboard Layout */
+.dashboard-container {
+  padding: 2rem;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* --- Donation Grid & Cards (for Recipient Dashboard) --- */
+.donations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.donation-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-info {
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.card-info h3 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.card-info p {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin: 0;
+}
+
+.card-info span {
+  font-weight: bold;
+  color: #555;
+}
+
+/* --- Donation Form (for Donor Dashboard) --- */
+.donation-form-container {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.donation-form-container h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* --- Common Buttons --- */
+.submit-button,
+.order-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.submit-button:hover,
+.order-button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+/* Add these new map-related styles to your existing Dashboard.css */
+
+/* Location Input Group */
+.location-input-group {
+    display: flex;
+    gap: 8px;
+}
+
+.location-input-group input {
+    flex: 1;
+}
+
+.search-location-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.search-location-btn:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.search-location-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.current-location-btn {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.current-location-btn:hover {
+    background-color: #45a049;
+}
+
+/* Map Container */
+.map-container {
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-help-text {
+    display: block;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Enhanced Message Styling */
+.message {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.message.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+/* Override form-group input styling for better consistency */
+.form-group input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.25);
+}
+
+/* Leaflet map styling adjustments */
+.leaflet-container {
+    border-radius: 8px;
+}
+/* Enhanced Dashboard CSS with Modern Animations and Styling */
+
+/* Dashboard Container with Gradient Background */
+.dashboard-container {
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.dashboard-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><circle cx="60" cy="60" r="1"/></g></svg>') repeat;
+  pointer-events: none;
+}
+
+/* Enhanced Header with Animation */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+  animation: slideInFromTop 0.8s ease-out;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.dashboard-header h1 {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+  transform: scaleX(0);
+  animation: expandLine 1.5s ease-out 0.5s forwards;
+}
+
+@keyframes expandLine {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
+/* Enhanced Donation Form Container */
+.donation-form-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 3rem;
+  border-radius: 24px;
+  box-shadow: 
+    0 20px 40px rgba(0,0,0,0.1),
+    0 0 0 1px rgba(255,255,255,0.1);
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  animation: slideInFromBottom 0.8s ease-out 0.3s both;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.donation-form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+  border-radius: 24px 24px 0 0;
+}
+
+.donation-form-container h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 1s ease-out 0.8s both;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Enhanced Form Groups */
+.form-group {
+  margin-bottom: 2rem;
+  position: relative;
+  animation: slideInLeft 0.6s ease-out both;
+}
+
+.form-group:nth-child(1) { animation-delay: 0.4s; }
+.form-group:nth-child(2) { animation-delay: 0.5s; }
+.form-group:nth-child(3) { animation-delay: 0.6s; }
+.form-group:nth-child(4) { animation-delay: 0.7s; }
+.form-group:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #34495e;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 10px;
+}
+
+.form-group label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  border-radius: 2px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #e1e8ed;
+  border-radius: 12px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4ecdc4;
+  box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.1);
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 1);
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+  border-color: #bdc3c7;
+  transform: translateY(-1px);
+}
+
+/* Enhanced Location Input Group */
+.location-input-group {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.location-input-group input {
+  flex: 1;
+}
+
+.search-location-btn {
+  padding: 15px 25px;
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.search-location-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.search-location-btn:hover::before {
+  left: 100%;
+}
+
+.search-location-btn:hover:not(:disabled) {
+  background: linear-gradient(45deg, #2980b9, #3498db);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+}
+
+.search-location-btn:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.current-location-btn {
+  padding: 15px 18px;
+  background: linear-gradient(45deg, #2ecc71, #27ae60);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.current-location-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.current-location-btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.current-location-btn:hover {
+  background: linear-gradient(45deg, #27ae60, #2ecc71);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(46, 204, 113, 0.3);
+}
+
+/* Enhanced Map Container */
+.map-container {
+  margin: 2rem 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 
+    0 20px 40px rgba(0,0,0,0.15),
+    0 0 0 1px rgba(255,255,255,0.1);
+  position: relative;
+  animation: scaleIn 0.8s ease-out 0.9s both;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.map-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1);
+  z-index: 1000;
+}
+
+.map-help-text {
+  display: block;
+  color: #7f8c8d;
+  margin-top: 12px;
+  font-style: italic;
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 10px;
+  background: rgba(127, 140, 141, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #4ecdc4;
+}
+
+/* Enhanced Submit Button */
+.submit-button {
+  background: linear-gradient(45deg, #2ecc71, #27ae60);
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  animation: bounceIn 0.8s ease-out 1s both;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.submit-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.submit-button:hover::before {
+  left: 100%;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: linear-gradient(45deg, #27ae60, #2ecc71);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(46, 204, 113, 0.4);
+}
+
+.submit-button:active {
+  transform: translateY(-1px);
+}
+
+.submit-button:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Enhanced Message Styling */
+.message {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  animation: slideInMessage 0.5s ease-out;
+}
+
+@keyframes slideInMessage {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.message.success {
+  color: #155724;
+  background: linear-gradient(45deg, #d4edda, #c3e6cb);
+  border-left: 5px solid #28a745;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+}
+
+.message.error {
+  color: #721c24;
+  background: linear-gradient(45deg, #f8d7da, #f5c6cb);
+  border-left: 5px solid #dc3545;
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.2);
+}
+
+.message::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+  border-radius: 12px 12px 0 0;
+}
+
+/* Leaflet Map Enhancements */
+.leaflet-container {
+  border-radius: 16px;
+  background: #f8f9fa;
+}
+
+.leaflet-control-zoom a {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  color: #2c3e50 !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: rgba(78, 205, 196, 0.9) !important;
+  color: white !important;
+  transform: scale(1.1) !important;
+}
+
+/* Floating Animation for Form Container */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.donation-form-container {
+  animation: slideInFromBottom 0.8s ease-out 0.3s both, float 6s ease-in-out infinite 2s;
+}
+
+/* Hover Effects for Cards */
+.donation-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.donation-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.donation-card:hover::before {
+  opacity: 1;
+}
+
+.donation-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+  
+  .donation-form-container {
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2rem;
+  }
+  
+  .location-input-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .search-location-btn,
+  .current-location-btn {
+    width: 100%;
+  }
+}
+/* === Donor-dashboard headline === */
+.dashboard-header {
+  justify-content: center;          /* push h1 to the middle */
+}
+
+.dashboard-header h1 {
+  font-family: 'Poppins', serif;    /* optional: nicer serif */
+  font-size: 2.6rem;                /* a bit smaller */
+  letter-spacing: 1px;
+}
+
+/* optional Google-Fonts import – place at top of CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&display=swap');
+
+
+/* === “Add a New Food Donation” title === */
+.donation-form-container h2 {
+  font-family: 'Inter', sans-serif; /* clean modern sans */
+  font-weight: 700;
+  font-size: 1.8rem;                /* slightly smaller */
+  color: #232323;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Google-Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+
+/* === Shrink the main form card on large screens === */
+@media (min-width: 992px) {
+  .donation-form-container {
+    max-width: 540px;   /* was 700px */
+    padding: 2.25rem;   /* a bit tighter */
+  }
+}
+/* ─── 1 | Imports ─── */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Manrope:wght@400;500;600&display=swap');
+
+/* ─── 2 | Centered H1 with Lora ─── */
+.dashboard-header{
+  justify-content:center;
+}
+.dashboard-header h1{
+  font-family:'Lora',serif;
+  font-weight:700;
+  font-size:2.4rem;
+  letter-spacing:.4px;
+}
+
+/* ─── 3 | Form heading in Manrope ─── */
+.donation-form-container h2{
+  font-family:'Manrope',sans-serif;
+  font-weight:600;
+  font-size:1.75rem;
+  color:#202020;
+  text-transform:uppercase;
+}
+
+/* ─── 4 | Compact card ─── */
+@media (min-width:992px){
+  .donation-form-container{
+    max-width:540px;
+    padding:2.25rem;
+  }
+}

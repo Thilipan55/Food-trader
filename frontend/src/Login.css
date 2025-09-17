@@ -1,0 +1,116 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: system-ui, sans-serif;
+}
+
+.login-box {
+    text-align: center;
+    background: white;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: slideUpFadeIn 0.8s ease-out forwards;
+}
+
+@keyframes slideUpFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);  
+    }
+}
+
+.login-box h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.login-box p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.login-button-purple {
+    background-color: #6f42c1;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px; 
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.login-button-purple:hover {
+    background-color: #5a349c; 
+}
+
+.login-button-purple:active {
+    transform: scale(0.98); 
+}
+
+
+/* Add these styles to your src/Login.css file */
+
+/* Container for the role buttons */
+.role-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px; /* Adds space between the buttons */
+  margin-bottom: 20px;
+}
+
+/* Styles for the "Donor" and "Recipient" buttons */
+.role-button {
+  background-color: #f0f2f5;
+  border: 2px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-basis: 50%; /* Makes buttons equal width */
+}
+
+/* Style for the button when it's hovered over */
+.role-button:hover {
+  border-color: #4CAF50;
+  color: #4CAF50;
+}
+
+/* Style for the selected (active) button */
+.role-button.selected {
+  background-color: #e6f7e9;
+  border-color: #4CAF50;
+  color: #4CAF50;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+}
+
+/* Style for the "Continue" button */
+.login-button-purple {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Makes the button full width */
+}
+
+.login-button-purple:hover {
+  background-color: #580099;
+}
